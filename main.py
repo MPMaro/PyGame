@@ -1,2 +1,29 @@
-x = 3 >= 2
-print(x)
+import pygame
+
+
+# WINDDOw 
+# Good To make varibels that will be constant(Won't chamnge) capital
+WHITE = (255,255,255)
+WIDTH, HEIGHT = 900, 500
+WIN = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("First Game")
+
+def main():
+    run = True
+    while run:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                run = False
+
+        WIN.fill((WHITE))
+        pygame.display.update()
+    pygame.quit()
+
+if __name__ == "__main__":
+    main()
+
+
+
+
+
+
